@@ -4,6 +4,9 @@
     <excludeFromCompile>
       <file url="file://$PROJECT_DIR$" />
     </excludeFromCompile>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="sandbox_main" target="1.8" />
+      <module name="sandbox_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
