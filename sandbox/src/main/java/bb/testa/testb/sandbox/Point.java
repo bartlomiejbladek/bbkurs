@@ -9,17 +9,23 @@ public class Point {
         this.y = y;
     }
 
-    public static double distance(Point x, Point y) {
-        double odl = 0;
-        odl += Math.pow(x.x - y.x, 2);
-        odl += Math.pow(x.y - y.y, 2);
-        return Math.sqrt(odl);
+    public static double distance(Point p1, Point p2) {
+        double odl;
+        double odlx = 0;
+        double odly = 0;
+
+        odlx = p1.x - p2.x;
+        odly = p1.y - p2.y;
+        odl = Math.sqrt((odlx * odlx)+(odly * odly));
+
+        return odl;
+
     }
 
     public static void main(String[] args) {
-        Point a = new Point(1, 1);
-        Point b = new Point(4, 5);
-        System.out.println(Point.distance(a, b));
+        Point p1 = new Point(1, 1);
+        Point p2 = new Point(4, 5);
+        System.out.println("Odległosć pomiędzy punktem p1 ( " + p1.x + " , " + p1.y  + " ) oraz punktem p2 ( " + p2.x + " , "+p2.y + " ) wynosi " + Point.distance(p1, p2));
 
     }
 }
