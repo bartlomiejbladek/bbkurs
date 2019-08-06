@@ -25,7 +25,7 @@ public class Point {
     public static void main(String[] args) {
         Point p1 = new Point(1, 1);
         Point p2 = new Point(4, 5);
-        System.out.println("Odległosć pomiędzy punktem p1 ( " + p1.x + " , " + p1.y  + " ) oraz punktem p2 ( " + p2.x + " , "+p2.y + " ) wynosi " + Point.distance(p1, p2));
+        System.out.println("The distance between point p1 ( " + p1.x + " , " + p1.y  + " ) and point p2 ( " + p2.x + " , "+p2.y + " ) equals " + Point.distance(p1, p2));
 
     }
 }
