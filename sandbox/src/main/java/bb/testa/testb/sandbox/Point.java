@@ -30,7 +30,7 @@ public class Point {
         calculation calc = new calculation(p1,p2);
         calc.distanceMethod();
         System.out.println("The distance between point p1 ( " + p1.x + " , " + p1.y  + " ) and point p2 ( " + p2.x + " , "+p2.y + " ) equals " + Point.distance(p1, p2));
-        System.out.println("From method" + calc.distanceMethod());
+        System.out.println("The distance between this points, calculated from method, also equals " + calc.distanceMethod());
 
     }
 }
