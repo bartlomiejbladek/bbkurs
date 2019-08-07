@@ -1,8 +1,10 @@
 package bb.testa.testb.sandbox;
 
+import java.sql.SQLOutput;
+
 public class Point {
-    private double x;
-    private double y;
+    public double x;
+    public double y;
 
     public Point(double x, double y) {
         this.x = x;
@@ -25,7 +27,10 @@ public class Point {
     public static void main(String[] args) {
         Point p1 = new Point(1, 1);
         Point p2 = new Point(4, 5);
+        calculation calc = new calculation(p1,p2);
+        calc.distanceMethod();
         System.out.println("The distance between point p1 ( " + p1.x + " , " + p1.y  + " ) and point p2 ( " + p2.x + " , "+p2.y + " ) equals " + Point.distance(p1, p2));
+        System.out.println("From method" + calc.distanceMethod());
 
     }
 }
