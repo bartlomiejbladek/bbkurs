@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad34f61a-ef2b-40e7-899d-9b9712923c21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/bb/testa/testb/sandbox/SquerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_testng_testng_7_0_0_beta7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_testng_testng_7_0_0_beta7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/sandbox_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/sandbox_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/AddGroups.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/AddGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/AddGroupsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/bb/testa/testb/sandbox/SquerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bb/testa/testb/sandbox/SquerTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SquerTests (1)">
+  <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -242,7 +234,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddGroups" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddGroupsTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="adressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -251,7 +243,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bb.testa.testb.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.sandbox.AddGroups" />
+      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.sandbox.AddGroupsTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
@@ -286,24 +278,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquerTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bb.testa.testb.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bb.testa.testb.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.sandbox.SquerTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SquerTests" type="TestNG" nameIsGenerated="true">
       <module name="sandbox_test" />
       <extension name="coverage">
@@ -324,6 +298,24 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquerTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bb.testa.testb.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bb.testa.testb.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.sandbox.SquerTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
       <method v="2">
@@ -354,13 +346,13 @@
       <item itemvalue="Gradle.sandbox [testClasses]" />
       <item itemvalue="TestNG.SimpleTest" />
       <item itemvalue="TestNG.SquerTests" />
-      <item itemvalue="TestNG.AddGroups" />
+      <item itemvalue="TestNG.AddGroupsTests" />
       <item itemvalue="TestNG.SquerTests (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddGroupsTests" />
         <item itemvalue="TestNG.SquerTests (1)" />
-        <item itemvalue="TestNG.AddGroups" />
         <item itemvalue="Gradle.SquerTests" />
         <item itemvalue="Gradle.sandbox [testClasses]" />
         <item itemvalue="Gradle.AddGroups" />
