@@ -2,9 +2,10 @@ package bb.testa.testb.sandbox;
 
 import org.testng.annotations.Test;
 
-public class SquerTest {
+public class SquerTests {
+
     @Test
-    public void testArea(){
+    public void firstAreaTest(){
         Squer s = new Squer(5);
         assert s.area() == 25;
     }

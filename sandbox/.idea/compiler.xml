@@ -5,6 +5,10 @@
       <file url="file://$PROJECT_DIR$" />
     </excludeFromCompile>
     <bytecodeTargetLevel target="1.8">
+      <module name="adressbook-web-tests.main" target="1.8" />
+      <module name="adressbook-web-tests.test" target="1.8" />
+      <module name="sandbox.main" target="1.8" />
+      <module name="sandbox.test" target="1.8" />
       <module name="sandbox_main" target="1.8" />
       <module name="sandbox_test" target="1.8" />
     </bytecodeTargetLevel>
