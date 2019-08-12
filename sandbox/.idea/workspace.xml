@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad34f61a-ef2b-40e7-899d-9b9712923c21" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/AddGroups.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/AddGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/AddGroupsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/AddGroupsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/AddGroupsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
