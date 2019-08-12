@@ -1,9 +1,9 @@
 package bb.testa.testb.sandbox;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 
-public class GroupDeletionTests extends TestBase {
+public class testGroupDeletion extends TestBase {
 
   @Test
   public void testGroupDeletion() throws Exception {
