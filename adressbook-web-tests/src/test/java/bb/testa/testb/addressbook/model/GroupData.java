@@ -1,4 +1,4 @@
-package bb.testa.testb.sandbox;
+package bb.testa.testb.addressbook.model;
 
 public class GroupData {
     private final String name;

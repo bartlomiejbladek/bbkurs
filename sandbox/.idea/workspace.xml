@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad34f61a-ef2b-40e7-899d-9b9712923c21" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/AddGroupsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/AddGroupsTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/GroupDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/testGroupDeletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/AddGroupsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/AddGroupsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/GroupData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/GroupDeletionTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/sandbox/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/AddGroupsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/GroupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/TestBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/sandbox/testGroupDeletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/testGroupDeletion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,6 +108,7 @@
       <recent name="bb.testa.testb.sandbox" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="bb.testa.testb.addressbook" />
       <recent name="bb.testa.testb.sandbox" />
     </key>
   </component>
@@ -133,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddGroupsTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../adressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;bb.testa.testb.sandbox.GroupDeletionTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;bb.testa.testb.addressbook.tests.AddGroupsTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -153,12 +162,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupDeletionTests.testGroupDeletion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="testGroupDeletion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../adressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;bb.testa.testb.sandbox.GroupDeletionTests.testGroupDeletion&quot;" />
+        <option name="scriptParameters" value="--tests &quot;bb.testa.testb.addressbook.tests.testGroupDeletion&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -173,12 +182,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SquerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="testGroupDeletion.testGroupDeletion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../adressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;bb.testa.testb.sandbox.SquerTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;bb.testa.testb.sandbox.testGroupDeletion.testGroupDeletion&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -243,8 +252,8 @@
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="bb.testa.testb.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.sandbox.AddGroupsTests" />
+      <option name="PACKAGE_NAME" value="bb.testa.testb.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.addressbook.tests.AddGroupsTests" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -261,7 +270,7 @@
       </method>
     </configuration>
     <configuration name="GroupDeletionTests" type="TestNG" temporary="true">
-      <module name="sandbox.test" />
+      <module name="adressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bb.testa.testb.sandbox.*" />
@@ -269,8 +278,8 @@
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="bb.testa.testb.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.sandbox.testGroupDeletion" />
+      <option name="PACKAGE_NAME" value="bb.testa.testb.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.addressbook.tests.testGroupDeletion" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -367,9 +376,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.SquerTests" />
-      <item itemvalue="Gradle.GroupDeletionTests" />
-      <item itemvalue="Gradle.GroupDeletionTests.testGroupDeletion" />
+      <item itemvalue="Gradle.testGroupDeletion.testGroupDeletion" />
+      <item itemvalue="Gradle.testGroupDeletion" />
+      <item itemvalue="Gradle.AddGroupsTests" />
       <item itemvalue="TestNG.SimpleTest" />
       <item itemvalue="TestNG.SquerTests" />
       <item itemvalue="TestNG.GroupDeletionTests" />
@@ -378,10 +387,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.GroupDeletionTests" />
+        <item itemvalue="Gradle.testGroupDeletion" />
         <item itemvalue="TestNG.AddGroupsTests" />
-        <item itemvalue="Gradle.GroupDeletionTests" />
-        <item itemvalue="Gradle.GroupDeletionTests.testGroupDeletion" />
-        <item itemvalue="Gradle.SquerTests" />
+        <item itemvalue="Gradle.AddGroupsTests" />
+        <item itemvalue="Gradle.testGroupDeletion" />
       </list>
     </recent_temporary>
   </component>
