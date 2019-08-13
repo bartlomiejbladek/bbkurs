@@ -29,7 +29,7 @@ public class AddUserTests {
   @Test
   public void testAddUser() throws Exception {
     gotoAddUserPage();
-    fillAddUserForm();
+    fillAddUserForm("FirstnTest", "LastnTest", "AdresTest", "123123123", "emailtest");
     submitAddUser();
     returnToHomePage();
   }
@@ -42,23 +42,23 @@ public class AddUserTests {
     wd.findElement(By.name("submit")).click();
   }
 
-  private void fillAddUserForm() {
+  private void fillAddUserForm(String firstname, String lastname, String address, String mobile, String email) {
     wd.findElement(By.name("firstname")).click();
     wd.findElement(By.name("firstname")).clear();
-    wd.findElement(By.name("firstname")).sendKeys("FirstnTest");
+    wd.findElement(By.name("firstname")).sendKeys(firstname);
     wd.findElement(By.name("lastname")).click();
     wd.findElement(By.name("lastname")).clear();
-    wd.findElement(By.name("lastname")).sendKeys("LastnTest");
+    wd.findElement(By.name("lastname")).sendKeys(lastname);
     wd.findElement(By.name("address")).click();
     wd.findElement(By.name("address")).clear();
-    wd.findElement(By.name("address")).sendKeys("AdresTest");
+    wd.findElement(By.name("address")).sendKeys(address);
     wd.findElement(By.name("mobile")).click();
     wd.findElement(By.name("mobile")).click();
     wd.findElement(By.name("mobile")).clear();
-    wd.findElement(By.name("mobile")).sendKeys("123123123");
+    wd.findElement(By.name("mobile")).sendKeys(mobile);
     wd.findElement(By.name("email")).click();
     wd.findElement(By.name("email")).clear();
-    wd.findElement(By.name("email")).sendKeys("emailtest");
+    wd.findElement(By.name("email")).sendKeys(email);
   }
 
   private void gotoAddUserPage() {
