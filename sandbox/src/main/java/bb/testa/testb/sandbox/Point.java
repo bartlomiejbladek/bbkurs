@@ -27,7 +27,7 @@ public class Point {
 
     public static void main(String[] args) {
         Point p1 = new Point(1, 1);
-        Point p2 = new Point(4, 5);
+        Point p2 = new Point(-1, -2);
         p1.distance(p2);
         //calculation calc = new calculation(p1,p2);
         //calc.distanceMethod();
