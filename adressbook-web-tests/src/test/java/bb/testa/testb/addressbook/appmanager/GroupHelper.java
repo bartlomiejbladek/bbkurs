@@ -2,13 +2,14 @@ package bb.testa.testb.addressbook.appmanager;
 
 import bb.testa.testb.addressbook.model.GroupData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GroupHelper {
 
-    private FirefoxDriver wd;
+    public WebDriver wd;
 
-    public GroupHelper(FirefoxDriver wd) {
+    public GroupHelper(WebDriver wd) {
         this.wd=wd;
     }
 

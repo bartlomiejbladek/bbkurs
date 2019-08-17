@@ -2,12 +2,13 @@ package bb.testa.testb.addressbook.appmanager;
 
 import bb.testa.testb.addressbook.model.AddUserData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ContactHelper {
-    private FirefoxDriver wd;
+    public WebDriver wd;
 
-    public ContactHelper(FirefoxDriver wd) {
+    public ContactHelper(WebDriver wd) {
         this.wd = wd;
     }
 

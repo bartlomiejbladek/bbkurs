@@ -2,12 +2,13 @@ package bb.testa.testb.addressbook.appmanager;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class NavigationHelper {
-    private FirefoxDriver wd;
+    public WebDriver wd;
 
-    public NavigationHelper(FirefoxDriver wd) {
+    public NavigationHelper(WebDriver wd) {
         this.wd = wd;
     }
 

@@ -1,12 +1,13 @@
 package bb.testa.testb.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SessionHelper {
-    private FirefoxDriver wd;
+    public WebDriver wd;
 
-    public SessionHelper(FirefoxDriver wd) {
+    public SessionHelper(WebDriver wd) {
 
         this.wd = wd;
     }
