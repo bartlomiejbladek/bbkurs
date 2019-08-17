@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad34f61a-ef2b-40e7-899d-9b9712923c21" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/GroupHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/bb/testa/testb/sandbox/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/bb/testa/testb/sandbox/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bb/testa/testb/sandbox/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bb/testa/testb/sandbox/Point.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PointTests">
+  <component name="RunManager" selected="TestNG.EquationTests">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -148,26 +147,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="AddUserTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../adressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;bb.testa.testb.addressbook.tests.AddUserTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="ContactModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -336,6 +315,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EquationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bb.testa.testb.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="bb.testa.testb.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.sandbox.EquationTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupModificationTests" type="TestNG" nameIsGenerated="true">
       <module name="adressbook-web-tests.test" />
       <option name="SUITE_NAME" value="" />
@@ -458,7 +463,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.Point" />
-      <item itemvalue="Gradle.AddUserTests" />
       <item itemvalue="Gradle.ContactModificationTests" />
       <item itemvalue="Gradle.ContactModificationTests.testContactModification" />
       <item itemvalue="TestNG.PointTests" />
@@ -469,14 +473,15 @@
       <item itemvalue="TestNG.SimpleTest" />
       <item itemvalue="TestNG.SquerTests" />
       <item itemvalue="TestNG.AddGroupsTests" />
+      <item itemvalue="TestNG.EquationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EquationTests" />
         <item itemvalue="Application.Point" />
         <item itemvalue="TestNG.AddGroupsTests" />
         <item itemvalue="Gradle.ContactModificationTests.testContactModification" />
         <item itemvalue="Gradle.ContactModificationTests" />
-        <item itemvalue="Gradle.AddUserTests" />
       </list>
     </recent_temporary>
   </component>
