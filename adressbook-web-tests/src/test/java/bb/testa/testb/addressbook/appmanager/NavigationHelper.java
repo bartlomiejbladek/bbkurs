@@ -16,7 +16,12 @@ public class NavigationHelper extends HelperBase {
     }
 
     public void gotoGroupPage() {
-      click(By.linkText("groups"));
+      if (isElementPresent(By.tagName("h1")) &&
+              wd.findElement(By.tagName("h1")).getText().equals("Groups") &&
+              isElementPresent(By.name("new"))){
+          return;
+      }
+        click(By.linkText("groups"));
     }
     public void gotoAddUserPage() {
         click(By.linkText("add new"));
@@ -25,6 +30,9 @@ public class NavigationHelper extends HelperBase {
     public void gotoHomePage() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(wd, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("home")));
+        if (isElementPresent(By.id("maintable"))){
+            return;
+        }
         click(By.linkText("home"));
     }
 

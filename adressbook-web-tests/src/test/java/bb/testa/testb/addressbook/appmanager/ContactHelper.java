@@ -2,7 +2,10 @@ package bb.testa.testb.addressbook.appmanager;
 
 import bb.testa.testb.addressbook.model.AddUserData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class ContactHelper extends HelperBase {
     //public WebDriver wd;
@@ -11,29 +14,29 @@ public class ContactHelper extends HelperBase {
         super(wd);
     }
 
-    public void fillAddUserForm(AddUserData addUserData) {
+    public void fillAddUserForm(AddUserData addUserData, boolean creation) {
         type(By.name("firstname"), addUserData.getFirstname());
         type(By.name("lastname"), addUserData.getLastname());
         type(By.name("address"), addUserData.getAddress());
         type(By.name("mobile"), addUserData.getMobile());
         type(By.name("email"), addUserData.getEmail());
+
+        if (creation){
+            new Select (wd.findElement(By.name("new_group"))).selectByVisibleText(addUserData.getGroup());
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
     }
 
-    //private void type(By locator, String text) {
-        //click(locator);
-        //wd.findElement(locator).clear();
-        //wd.findElement(locator).sendKeys(text);
-    //}
+
+
+
 
     public void returnToHomePage() {
         click(By.linkText("home page"));
     }
 
-    //private void click(By locator) {
-        //wd.findElement(locator).click();
-    //}
-
-    public void submitAddUser() {
+     public void submitAddUser() {
         click(By.name("submit"));
     }
 
