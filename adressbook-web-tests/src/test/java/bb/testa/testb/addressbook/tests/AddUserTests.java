@@ -11,9 +11,7 @@ public class AddUserTests extends TestBase {
   @Test
   public void testAddUser() throws Exception {
     app.getNavigationHelper().gotoAddUserPage();
-    app.getContactHelper().fillAddUserForm(new AddUserData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
-    app.getContactHelper().submitAddUser();
-    app.getContactHelper().returnToHomePage();
+    app.getContactHelper().createContact(new AddUserData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
   }
 
 
