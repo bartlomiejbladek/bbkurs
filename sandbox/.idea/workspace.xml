@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad34f61a-ef2b-40e7-899d-9b9712923c21" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/ApplicationManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/GroupHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/GroupHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/GroupData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/AddGroupsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/AddGroupsTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupDeletionTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/GroupHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/GroupData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/AddGroupsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/AddGroupsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupDeletionTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupModificationTests.java" afterDir="false" />
@@ -94,7 +94,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../adressbook-web-tests/build.gradle" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
