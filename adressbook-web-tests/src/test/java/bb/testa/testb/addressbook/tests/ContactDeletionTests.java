@@ -5,6 +5,8 @@ import bb.testa.testb.addressbook.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class ContactDeletionTests extends TestBase {
 
     @Test
@@ -19,12 +21,12 @@ public class ContactDeletionTests extends TestBase {
             app.getNavigationHelper().gotoAddUserPage();
             app.getContactHelper().createContact(new ContactData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
         }
-        int before = app.getContactHelper().getContactCount();
-        app.getContactHelper().selectDelationCheckbox(before-1);
+        List<ContactData> before = app.getContactHelper().getContactList();
+        app.getContactHelper().selectDelationCheckbox(before.size() - 1);
         app.getContactHelper().delationConfirmation();
         app.getNavigationHelper().allertAccept();
         app.getNavigationHelper().gotoHomePage();
-        int after = app.getContactHelper().getContactCount();
-        Assert.assertEquals(after, before-1);
+        List<ContactData> after = app.getContactHelper().getContactList();
+        Assert.assertEquals(after.size(), before.size() - 1);
     }
 }

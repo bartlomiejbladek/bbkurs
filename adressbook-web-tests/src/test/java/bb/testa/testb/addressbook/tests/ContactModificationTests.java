@@ -5,6 +5,8 @@ import bb.testa.testb.addressbook.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class ContactModificationTests extends TestBase{
 
     @Test
@@ -21,12 +23,12 @@ public class ContactModificationTests extends TestBase{
             app.getNavigationHelper().gotoAddUserPage();
             app.getContactHelper().createContact(new ContactData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
         }
-        int before = app.getContactHelper().getContactCount();
-        app.getContactHelper().initContactModification(before-1);
+        List<ContactData> before = app.getContactHelper().getContactList();
+        app.getContactHelper().initContactModification(before.size()-1);
         app.getContactHelper().fillAddUserForm(new ContactData("FirstnTest", "LastnTest", null, "123123123", "emailtest", null),false);
         app.getContactHelper().submitUpdateUser();
         app.getContactHelper().returnToHomePage();
-        int after = app.getContactHelper().getContactCount();
-        Assert.assertEquals(after, before);
+        List<ContactData> after = app.getContactHelper().getContactList();
+        Assert.assertEquals(after.size(), before.size());
     }
 }
