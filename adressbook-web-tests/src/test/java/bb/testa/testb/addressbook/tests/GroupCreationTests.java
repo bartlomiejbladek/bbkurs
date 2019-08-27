@@ -8,7 +8,7 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 
-public class AddGroupsTests extends TestBase {
+public class GroupCreationTests extends TestBase {
 
   @Test
   public void testAddGroups() throws Exception {

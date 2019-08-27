@@ -1,8 +1,7 @@
 package bb.testa.testb.addressbook.appmanager;
 
-import bb.testa.testb.addressbook.model.AddUserData;
+import bb.testa.testb.addressbook.model.ContactData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -14,15 +13,15 @@ public class ContactHelper extends HelperBase {
         super(wd);
     }
 
-    public void fillAddUserForm(AddUserData addUserData, boolean creation) {
-        type(By.name("firstname"), addUserData.getFirstname());
-        type(By.name("lastname"), addUserData.getLastname());
-        type(By.name("address"), addUserData.getAddress());
-        type(By.name("mobile"), addUserData.getMobile());
-        type(By.name("email"), addUserData.getEmail());
+    public void fillAddUserForm(ContactData contactData, boolean creation) {
+        type(By.name("firstname"), contactData.getFirstname());
+        type(By.name("lastname"), contactData.getLastname());
+        type(By.name("address"), contactData.getAddress());
+        type(By.name("mobile"), contactData.getMobile());
+        type(By.name("email"), contactData.getEmail());
 
         if (creation){
-            new Select (wd.findElement(By.name("new_group"))).selectByVisibleText(addUserData.getGroup());
+            new Select (wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
@@ -58,7 +57,7 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void createContact(AddUserData contact, boolean creation) {
+    public void createContact(ContactData contact, boolean creation) {
         fillAddUserForm(contact, creation);
         submitAddUser();
         returnToHomePage();
@@ -67,4 +66,5 @@ public class ContactHelper extends HelperBase {
     public boolean isThereAContact() {
         return isElementPresent(By.xpath("//td/input"));
     }
+
 }

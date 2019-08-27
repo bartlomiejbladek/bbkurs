@@ -1,6 +1,6 @@
 package bb.testa.testb.addressbook.tests;
 
-import bb.testa.testb.addressbook.model.AddUserData;
+import bb.testa.testb.addressbook.model.ContactData;
 import bb.testa.testb.addressbook.model.GroupData;
 import org.testng.annotations.Test;
 
@@ -16,7 +16,7 @@ public class ContactDelationTests extends TestBase {
                 app.getGroupHelper().createGroup(new GroupData("test1", "test2", null));
             }
             app.getNavigationHelper().gotoAddUserPage();
-            app.getContactHelper().createContact(new AddUserData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
+            app.getContactHelper().createContact(new ContactData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
         }
         app.getContactHelper().selectDelationCheckbox();
         app.getContactHelper().delationConfirmation();

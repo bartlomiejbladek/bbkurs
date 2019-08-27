@@ -1,6 +1,6 @@
 package bb.testa.testb.addressbook.model;
 
-public class AddUserData {
+public class ContactData {
     private final String firstname;
     private final String lastname;
     private final String address;
@@ -8,7 +8,7 @@ public class AddUserData {
     private final String email;
     private String group;
 
-    public AddUserData(String firstname, String lastname, String address, String mobile, String email, String group) {
+    public ContactData(String firstname, String lastname, String address, String mobile, String email, String group) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.address = address;
