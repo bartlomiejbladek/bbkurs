@@ -20,7 +20,7 @@ public class ContactDeletionTests extends TestBase {
             app.getContactHelper().createContact(new ContactData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
         }
         int before = app.getContactHelper().getContactCount();
-        app.getContactHelper().selectDelationCheckbox();
+        app.getContactHelper().selectDelationCheckbox(before-1);
         app.getContactHelper().delationConfirmation();
         app.getNavigationHelper().allertAccept();
         app.getNavigationHelper().gotoHomePage();

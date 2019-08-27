@@ -22,7 +22,7 @@ public class ContactModificationTests extends TestBase{
             app.getContactHelper().createContact(new ContactData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
         }
         int before = app.getContactHelper().getContactCount();
-        app.getContactHelper().initContactModification();
+        app.getContactHelper().initContactModification(before-1);
         app.getContactHelper().fillAddUserForm(new ContactData("FirstnTest", "LastnTest", null, "123123123", "emailtest", null),false);
         app.getContactHelper().submitUpdateUser();
         app.getContactHelper().returnToHomePage();
