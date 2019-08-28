@@ -5,6 +5,7 @@ import bb.testa.testb.addressbook.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -36,6 +37,9 @@ public class ContactModificationTests extends TestBase{
 
         before.remove(before.size() - 1);
         before.add(contact);
-        Assert.assertEquals(new HashSet<>(before), new HashSet<>(after));
+        Comparator<? super ContactData> byID = (c1, c2) -> Integer.compare(c1.getId(),c2.getId());
+        before.sort(byID);
+        after.sort(byID);
+        Assert.assertEquals(before, after);
     }
 }
