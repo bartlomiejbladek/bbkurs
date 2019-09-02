@@ -8,8 +8,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.testng:testng:7.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-java:4.0.0-alpha-2" level="project" />
-    <orderEntry type="library" name="Gradle: org.testng:testng:7.0.0-beta7" level="project" />
+    <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:4.0.0-alpha-2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-edgehtml-driver:4.0.0-alpha-2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-firefox-xpi-driver:4.0.0-alpha-2" level="project" />
@@ -17,7 +18,6 @@
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-opera-driver:4.0.0-alpha-2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-safari-driver:4.0.0-alpha-2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-support:4.0.0-alpha-2" level="project" />
-    <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-edge-driver:4.0.0-alpha-2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chromium-driver:4.0.0-alpha-2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-firefox-driver:4.0.0-alpha-2" level="project" />

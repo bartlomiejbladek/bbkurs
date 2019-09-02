@@ -5,18 +5,17 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class GroupCreationTests extends TestBase {
 
   @Test
   public void testAddGroups() throws Exception {
-    app.getNavigationHelper().gotoGroupPage();
-    List<GroupData> before = app.getGroupHelper().getGroupList();
-    GroupData group = new GroupData("test3b", "test2", null);
-    app.getGroupHelper().createGroup(group);
-    List<GroupData> after = app.getGroupHelper().getGroupList();
+    app.goTo().groupPage();
+    List<GroupData> before = app.group().list();
+    GroupData group = new GroupData().withName("test1");
+    app.group().create(group);
+    List<GroupData> after = app.group().list();
     Assert.assertEquals(after.size() , before.size() +1);
 
     before.add(group);

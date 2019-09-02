@@ -1,13 +1,11 @@
 package bb.testa.testb.addressbook.tests;
 
 import bb.testa.testb.addressbook.model.ContactData;
-import bb.testa.testb.addressbook.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class ContactCreationTests extends TestBase {
@@ -16,11 +14,11 @@ public class ContactCreationTests extends TestBase {
 
   @Test
   public void testAddUser() throws Exception {
-    List<ContactData> before = app.getContactHelper().getContactList();
-    app.getNavigationHelper().gotoAddUserPage();
-    ContactData contact = new ContactData("FirstnTest", "LastnTest", null, "123123123", "emailtest", null);
-    app.getContactHelper().createContact(new ContactData("FirstnTest", "LastnTest", null, null, "emailtest", "test1"), true);
-    List<ContactData> after = app.getContactHelper().getContactList();
+    List<ContactData> before = app.contact().list();
+    app.goTo().addUserPage();
+    ContactData contact = new ContactData().withFirstname("FirstnTestBB").withLastname("LastnTest").withGroup("test1");
+    app.contact().create(contact, true);
+    List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size() + 1);
 
     before.add(contact);
