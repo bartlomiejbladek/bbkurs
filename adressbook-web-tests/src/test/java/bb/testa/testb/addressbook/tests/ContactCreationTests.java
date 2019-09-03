@@ -1,10 +1,12 @@
 package bb.testa.testb.addressbook.tests;
 
 import bb.testa.testb.addressbook.model.ContactData;
-import org.testng.Assert;
-import org.testng.annotations.*;
-import org.openqa.selenium.*;
-import java.util.Set;
+import bb.testa.testb.addressbook.model.Contacts;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactCreationTests extends TestBase {
   private WebDriver wd;
@@ -12,16 +14,15 @@ public class ContactCreationTests extends TestBase {
 
   @Test
   public void testAddUser() throws Exception {
-    Set<ContactData> before = app.contact().all();
+    Contacts before = app.contact().all();
     app.goTo().addUserPage();
     ContactData contact = new ContactData().withFirstname("FirstnTestBB").withLastname("ZZLastnTest").withGroup("test1");
     app.contact().create(contact, true);
-    Set<ContactData> after = app.contact().all();
-    Assert.assertEquals(after.size(), before.size() + 1);
+    Contacts after = app.contact().all();
+    assertThat(after.size(), equalTo(before.size() + 1));
 
-    contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
-    before.add(contact);
-    Assert.assertEquals(before, after);
+    assertThat(after, equalTo(
+            before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 
   }
 }
