@@ -73,12 +73,14 @@ public class ContactHelper extends HelperBase {
     public void create(ContactData contact, boolean creation) {
         fillAddUserForm(contact, creation);
         submitAddUser();
+        contactCache = null;
         returnToHomePage();
     }
     public void modify(ContactData contact) {
         initContactModificationById(contact.getId());
         fillAddUserForm(contact,false);
         submitUpdateUser();
+        contactCache = null;
         returnToHomePage();
     }
 
@@ -90,6 +92,7 @@ public class ContactHelper extends HelperBase {
     public void toDeletion(ContactData contact) {
         selectDelationCheckboxById(contact.getId());
         delationConfirmation();
+        contactCache = null;
     }
 
     public boolean isThereAContact() {
@@ -111,16 +114,22 @@ public class ContactHelper extends HelperBase {
         }
         return contacts;
     }
+
+    private Contacts contactCache = null;
+
     public Contacts all() {
-        Contacts contacts = new Contacts();
+        if (contactCache != null){
+            return new Contacts(contactCache);
+        }
+        contactCache = new Contacts();
         List<WebElement> elements = wd.findElements(By.xpath("//tr[contains(@name,'entry')]"));
         for (WebElement element : elements) {
             String lastname = element.findElement(By.xpath(".//td[2]")).getText();
             String firstname = element.findElement(By.xpath(".//td[3]")).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("id"));
-            contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname));
+            contactCache.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname));
         }
-        return contacts;
+        return new Contacts(contactCache);
     }
 
 }
