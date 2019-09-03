@@ -4,9 +4,7 @@ import bb.testa.testb.addressbook.model.ContactData;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
-
-import java.util.Comparator;
-import java.util.List;
+import java.util.Set;
 
 public class ContactCreationTests extends TestBase {
   private WebDriver wd;
@@ -14,17 +12,15 @@ public class ContactCreationTests extends TestBase {
 
   @Test
   public void testAddUser() throws Exception {
-    List<ContactData> before = app.contact().list();
+    Set<ContactData> before = app.contact().all();
     app.goTo().addUserPage();
-    ContactData contact = new ContactData().withFirstname("FirstnTestBB").withLastname("LastnTest").withGroup("test1");
+    ContactData contact = new ContactData().withFirstname("FirstnTestBB").withLastname("ZZLastnTest").withGroup("test1");
     app.contact().create(contact, true);
-    List<ContactData> after = app.contact().list();
+    Set<ContactData> after = app.contact().all();
     Assert.assertEquals(after.size(), before.size() + 1);
 
+    contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
     before.add(contact);
-    Comparator<? super ContactData> byID = (c1, c2) -> Integer.compare(c1.getId(),c2.getId());
-    before.sort(byID);
-    after.sort(byID);
     Assert.assertEquals(before, after);
 
   }

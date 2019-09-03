@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
     //public WebDriver wd;
@@ -32,9 +34,6 @@ public class ContactHelper extends HelperBase {
     }
 
 
-
-
-
     public void returnToHomePage() {
         click(By.linkText("home page"));
     }
@@ -43,6 +42,12 @@ public class ContactHelper extends HelperBase {
         click(By.name("submit"));
     }
 
+    private void initContactModificationById(int id) {
+
+        //wd.findElement(By.xpath("//a[contains(@href,'edit.php?id="+id + "')]")).click();
+        wd.findElement(By.cssSelector(("a[href='edit.php?id=") + id + "']")).click();
+
+    }
     public void initContactModification(int index) {
         wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
 
@@ -55,6 +60,9 @@ public class ContactHelper extends HelperBase {
         wd.findElements(By.xpath("//td/input")).get(index).click();
     }
 
+    private void selectDelationCheckboxById(int id) {
+        wd.findElement(By.cssSelector(("input[value='") + id + "']")).click();
+    }
 
     public void delationConfirmation() {
         click(By.xpath("//input[@value='Delete']"));
@@ -66,15 +74,20 @@ public class ContactHelper extends HelperBase {
         submitAddUser();
         returnToHomePage();
     }
-    public void modify(int index, ContactData contact) {
-        initContactModification(index);
+    public void modify(ContactData contact) {
+        initContactModificationById(contact.getId());
         fillAddUserForm(contact,false);
         submitUpdateUser();
         returnToHomePage();
     }
 
+
     public void toDeletion(int index) {
         selectDelationCheckbox(index);
+        delationConfirmation();
+    }
+    public void toDeletion(ContactData contact) {
+        selectDelationCheckboxById(contact.getId());
         delationConfirmation();
     }
 
@@ -97,4 +110,16 @@ public class ContactHelper extends HelperBase {
         }
         return contacts;
     }
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
+        List<WebElement> elements = wd.findElements(By.xpath("//tr[contains(@name,'entry')]"));
+        for (WebElement element : elements) {
+            String lastname = element.findElement(By.xpath(".//td[2]")).getText();
+            String firstname = element.findElement(By.xpath(".//td[3]")).getText();
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("id"));
+            contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname));
+        }
+        return contacts;
+    }
+
 }
