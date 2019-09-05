@@ -99,7 +99,7 @@ public class ContactHelper extends HelperBase {
         return isElementPresent(By.xpath("//td/input"));
     }
 
-    public int getContactCount() {
+    public int count() {
         return  wd.findElements(By.xpath("//tr[contains(@name,'entry')]")).size();
     }
 
