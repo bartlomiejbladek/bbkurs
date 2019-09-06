@@ -1,7 +1,6 @@
 package bb.testa.testb.addressbook.tests;
 
 import bb.testa.testb.addressbook.model.ContactData;
-import bb.testa.testb.addressbook.model.Contacts;
 import bb.testa.testb.addressbook.model.GroupData;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,7 +8,7 @@ import org.testng.annotations.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ContactModificationTests extends TestBase{
+public class AllContactDataTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
@@ -25,19 +24,21 @@ public class ContactModificationTests extends TestBase{
         }
     }
 
+
     @Test
-    public void testContactModification() throws InterruptedException {
-        Contacts before = app.contact().all();
-        ContactData modifiedContact = before.iterator().next();
-        ContactData contact = new ContactData()
-                .withId(modifiedContact.getId()).withFirstname("modFirstnTest").withLastname("modLastnTest")
-                .withAddress("modAddress").withMobilePhone("123123123").withEmail("emailtest");
-        app.contact().modify(contact);
-        assertThat(app.contact().count(), equalTo( before.size()));
-        Contacts after = app.contact().all();
+    public void testContactPhones() throws InterruptedException {
+        app.goTo().homePage();
+        ContactData contact = app.contact().all().iterator().next();
+        ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
 
-        assertThat(after, equalTo(before.withOut(modifiedContact).withAdded(contact)));
+        assertThat(contact.getHomePhone(), equalTo(cleaned(contactInfoFromEditForm.getHomePhone())));
+        assertThat(contact.getMobilePhone(), equalTo(cleaned(contactInfoFromEditForm.getMobilePhone())));
+        assertThat(contact.getWorkPhone(), equalTo(cleaned(contactInfoFromEditForm.getWorkPhone())));
+
+
+
     }
-
-
+    public String cleaned(String phone){
+        return phone.replaceAll("\\s" , "").replaceAll("[-()]" , "");
+    }
 }
