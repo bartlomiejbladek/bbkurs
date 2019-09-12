@@ -8,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class NavigationHelper extends HelperBase {
     //public WebDriver wd;
 
@@ -28,7 +30,7 @@ public class NavigationHelper extends HelperBase {
     }
 
     public void homePage() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(wd, 2);
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofMillis(20));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("home")));
         if (isElementPresent(By.id("maintable"))){
             return;

@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad34f61a-ef2b-40e7-899d-9b9712923c21" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/ContactHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/ContactHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/HelperBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/NavigationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/NavigationHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/ContactData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/ContactData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/AllContactDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/AllContactDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/GroupData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactCreationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupCreationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/ContactHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/NavigationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/AllContactDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/AllContactDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/GroupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/adressbook-web-tests.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/adressbook-web-tests.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/adressbook-web-tests.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/adressbook-web-tests.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,12 +102,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adressbook-web-tests/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adressbook-web-tests" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -126,9 +139,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AllContactDataTest">
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupDataGenerator" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="bb.testa.testb.addressbook.generators.GroupDataGenerator" />
+      <module name="adressbook-web-tests.test" />
+      <option name="PROGRAM_PARAMETERS" value="-f src/test/resources/groups.xml -c 30 -d xml" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../adressbook-web-tests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -478,6 +500,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="Application.Point" />
       <item itemvalue="Gradle.ContactModificationTests.testContactModification" />
       <item itemvalue="Gradle.GroupDeletionTests" />
