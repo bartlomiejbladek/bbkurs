@@ -1,0 +1,82 @@
+[
+  {
+    "firstname": "first 0",
+    "lastname": "lastName 0",
+    "address": "Adres 0",
+    "mobilePhone": "999990",
+    "email": "email0@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 1",
+    "lastname": "lastName 1",
+    "address": "Adres 1",
+    "mobilePhone": "999991",
+    "email": "email1@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 2",
+    "lastname": "lastName 2",
+    "address": "Adres 2",
+    "mobilePhone": "999992",
+    "email": "email2@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 3",
+    "lastname": "lastName 3",
+    "address": "Adres 3",
+    "mobilePhone": "999993",
+    "email": "email3@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 4",
+    "lastname": "lastName 4",
+    "address": "Adres 4",
+    "mobilePhone": "999994",
+    "email": "email4@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 5",
+    "lastname": "lastName 5",
+    "address": "Adres 5",
+    "mobilePhone": "999995",
+    "email": "email5@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 6",
+    "lastname": "lastName 6",
+    "address": "Adres 6",
+    "mobilePhone": "999996",
+    "email": "email6@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 7",
+    "lastname": "lastName 7",
+    "address": "Adres 7",
+    "mobilePhone": "999997",
+    "email": "email7@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 8",
+    "lastname": "lastName 8",
+    "address": "Adres 8",
+    "mobilePhone": "999998",
+    "email": "email8@test.pl",
+    "group": "test1"
+  },
+  {
+    "firstname": "first 9",
+    "lastname": "lastName 9",
+    "address": "Adres 9",
+    "mobilePhone": "999999",
+    "email": "email9@test.pl",
+    "group": "test1"
+  }
+]

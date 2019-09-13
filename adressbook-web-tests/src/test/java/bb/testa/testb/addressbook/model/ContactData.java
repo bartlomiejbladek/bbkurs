@@ -1,16 +1,29 @@
 package bb.testa.testb.addressbook.model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.io.File;
 import java.util.Objects;
 
-public class ContactData {
+@XStreamAlias("contact")
 
+
+public class ContactData {
+    @XStreamOmitField
     private int id= Integer.MAX_VALUE;
+    @Expose
     private String firstname;
+    @Expose
     private String lastname;
+    @Expose
     private String address;
+    @Expose
     private String mobilePhone;
+    @Expose
     private String email;
+    @Expose
     private String group;
     private String homePhone;
     private String workPhone;
