@@ -60,14 +60,14 @@ public class ContactCreationTests extends TestBase {
     @Test (dataProvider = "validContactsFromJson")
   public void testAddUser(ContactData contact) throws Exception {
     app.goTo().homePage();
-    Contacts before = app.contact().all();
+    Contacts before = app.db().contacts();
       app.goTo().addUserPage();
 //    File photo = new File("src/test/resources/minion1.png");
 //    ContactData contact = new ContactData().withFirstname("FirstnTestBB").withLastname("AAALastnTest").withGroup("test1").withPhoto(photo);
     app.contact().create(contact, true);
     app.goTo().homePage();
     assertThat(app.contact().count(), equalTo( before.size() + 1));
-    Contacts after = app.contact().all();
+    Contacts after = app.db().contacts();
 
     assertThat(after, equalTo(
             before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
