@@ -2,35 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad34f61a-ef2b-40e7-899d-9b9712923c21" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/ContactData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/ContactData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/Contacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/Contacts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/GroupData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/Groups.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/model/Groups.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactCreationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactDeletionTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/ContactModificationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupCreationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupDeletionTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/GroupModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/resources/test/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/resources/test/contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/resources/test/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/resources/test/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/build/classes/java/test/bb/testa/testb/addressbook/tests/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/Contacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/Groups.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/model/Groups.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactDeletionTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/ContactModificationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupDeletionTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/GroupModificationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/HbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/HbConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../adressbook-web-tests/src/test/java/bb/testa/testb/addressbook/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -152,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.allContactTests">
+  <component name="RunManager" selected="TestNG.ContactDeletionTests">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -341,6 +328,7 @@
       <option name="MAIN_CLASS_NAME" value="bb.testa.testb.addressbook.tests.ContactDeletionTests" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -DverifyUI=true" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -427,6 +415,7 @@
       <option name="MAIN_CLASS_NAME" value="bb.testa.testb.addressbook.tests.GroupDeletionTests" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -DverifyUI=true" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -447,6 +436,7 @@
       <option name="MAIN_CLASS_NAME" value="bb.testa.testb.addressbook.tests.GroupModificationTests" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -DverifyUI=true" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="" />
