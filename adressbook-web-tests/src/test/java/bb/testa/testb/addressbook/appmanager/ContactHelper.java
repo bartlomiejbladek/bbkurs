@@ -164,4 +164,12 @@ public class ContactHelper extends HelperBase {
 
     }
 
+    public String infoFromDetailsPage(ContactData contact) {
+        initDetailsById(contact.getId());
+        String allDetails = wd.findElement(By.id("content")).getText();
+        return allDetails;
+    }
+    private void initDetailsById(int id) {
+        click(By.cssSelector("a[href*='view.php?id=" + id + "']"));
+    }
 }
